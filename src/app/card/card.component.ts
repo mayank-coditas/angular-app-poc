@@ -35,8 +35,9 @@ export class CardComponent implements OnInit {
 
   updateValue() {
     this.state.angular++;
-    this.store.dispatch(new Update(this.state));
     this.emitstate.emit(this.state);
+    // this.store.dispatch(new Update(this.state));
+    console.log(this.state);
   }
 
 }
